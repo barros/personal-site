@@ -1,0 +1,44 @@
+{
+  "title": "Jeffrey Barros Peña",
+  "summary": "<self description goes here>",
+  "studies": [
+    {
+      "institute": "Boston College",
+      "logo": "../../public/images/vintageBC.png",
+      "url": "http://www.bc.edu/",
+      "title": "Computer Science, B.A.",
+      "durationInYears": "4",
+      "graduationYear": 2019
+    }
+  ],
+  "experiences": [
+    {
+      "companyName": "Boston College, Information Technology Services",
+      "logo": "../../public/images/bcSeal.png",
+      "url": "https://www.bc.edu/",
+      "roles": [
+        {
+          "title": "Lead Student Technology Specialist",
+          "description": "<lead tech speciallist exp>",
+          "startDate": "2018-05-01",
+          "currentJob": true,
+          "location": "Chestnut Hill, MA"
+        },
+        {
+          "title": "Student Technology Specialist",
+          "description": "<student tech specialist exp>",
+          "startDate": "2016-01-01",
+          "endDate": "2018-01-01",
+          "location": "Chestnut Hill, MA"
+        },
+        {
+          "title": "Intern",
+          "description": "<work-study exp>",
+          "startDate": "2012-09-01",
+          "endDate": "2015-06-01",
+          "location": "Chestnut Hill, MA"
+        }
+      ]
+    }
+  ]
+}
