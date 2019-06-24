@@ -1,10 +1,10 @@
 {
   "title": "Jeffrey Barros Peña",
-  "summary": "<self description goes here>",
+  "summary": "I am a determined recent graduate who is passionate about the field of computer science and the development of software that betters the lives of its users. I look forward to excelling past the boundaries of my academic experience to continue learning about new technology stacks that make up the business world we live in.",
   "studies": [
     {
       "institute": "Boston College",
-      "logo": "../../public/images/vintageBC.png",
+      "logo": "http://www.collegevault.com/wp-content/uploads/2014/11/bc_cv15.png",
       "url": "http://www.bc.edu/",
       "title": "Computer Science, B.A.",
       "durationInYears": "4",
@@ -14,29 +14,107 @@
   "experiences": [
     {
       "companyName": "Boston College, Information Technology Services",
-      "logo": "../../public/images/bcSeal.png",
+      "logo": "https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col2/bc_image_content/image.img.png/1550507516441.png",
       "url": "https://www.bc.edu/",
       "roles": [
         {
           "title": "Lead Student Technology Specialist",
-          "description": "<lead tech speciallist exp>",
+          "tasks": [
+            "- Manage a staff of 45+ student technicians to help empower the provision of superior customer service",
+            "- Bring tech support to the BC community as Walk-In Help Desk student manager and senior student technician",
+            "- Review and enforce policies, particularly those pertaining to quality assurance",
+            "- Identify areas for improvement and make policy recommendations as appropriate"
+          ],
           "startDate": "2018-05-01",
           "currentJob": true,
           "location": "Chestnut Hill, MA"
         },
         {
           "title": "Student Technology Specialist",
-          "description": "<student tech specialist exp>",
+          "tasks": [
+            "- Reimaged Macs and PCs, installed Bootcamp on Macs, replaced hard drives, ran hard drive and RAM tests",
+            "- Offered the Boston College student community technical support emphasizing customer service and professionalism"
+          ],
           "startDate": "2016-01-01",
           "endDate": "2018-01-01",
           "location": "Chestnut Hill, MA"
         },
         {
-          "title": "Intern",
-          "description": "<work-study exp>",
+          "title": "Work-Study Intern",
+          "tasks": [
+            "- Provide support at the internal ITS office and the Walk-In Help Desk",
+            "- Route calls for the Boston College Switchboard"
+          ],
           "startDate": "2012-09-01",
           "endDate": "2015-06-01",
           "location": "Chestnut Hill, MA"
+        }
+      ]
+    },
+    {
+      "companyName": "BC GET Delivery",
+      "logo": "https://media.licdn.com/dms/image/C560BAQFx7mGex98Drg/company-logo_400_400/0?e=1568851200&v=beta&t=dAHEiL6cuhukyK7j746hhLakWJKKknpe4t1iqsqsV3E",
+      "url": "https://www.linkedin.com/company/bc-get-delivery/about/",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "tasks": [
+            "- Front-end web development on a portal to manage incoming food orders (React, PostgreSQL)",
+            "- Worked directly with the CTO on the design, structure, and routing of upcoming features",
+            "- Agile environment with version control, code reviews, server-side and backend maintenance, UI enhancements"
+          ],
+          "startDate": "2018-08-01",
+          "endDate": "2019-05-31",
+          "location": "Chestnut Hill, MA"
+        }
+      ]
+    },
+    {
+      "companyName": "Nike Boston",
+      "logo": "https://media.licdn.com/dms/image/C560BAQHR1RfVwHn3Lw/company-logo_400_400/0?e=1568851200&v=beta&t=BPmgGlo1sduSQeUegYX-fvMygHHHfmhmqj3Jyg9h514",
+      "url": "https://www.nike.com/",
+      "roles": [
+        {
+          "title": "Sales Associate",
+          "tasks": [
+            "- selling stuff"
+          ],
+          "startDate": "2015-02-01",
+          "endDate": "2015-11-30",
+          "location": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "companyName": "Cristo Rey Boston High School",
+      "logo": "https://media.licdn.com/dms/image/C560BAQFci67xgY2vSw/company-logo_400_400/0?e=1568851200&v=beta&t=iQo20XIORyf2KYRB8SmE3vBwqtsMqSfNPU2AAowBOdk",
+      "url": "https://www.cristoreyboston.org/",
+      "roles": [
+        {
+          "title": "Foundations Orientation Mentor",
+          "tasks": [
+            "- Assisted staff in teaching workplace fundamentals that ensured a smooth work-study transition for incoming students"
+          ],
+          "startDate": "2014-07-01",
+          "endDate": "2014-08-30",
+          "location": "Dorchester, MA"
+        }
+      ]
+    },
+    {
+      "companyName": "Massachusetts House of Representatives",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Seal_of_the_House_of_Representatives_of_Massachusetts.svg/800px-Seal_of_the_House_of_Representatives_of_Massachusetts.svg.png",
+      "url": "https://malegislature.gov/People/Profile/J_S1",
+      "roles": [
+        {
+          "title": "Intern",
+          "tasks": [
+            "- Managed a team of 5 interns in assigned tasks that included receiving calls and letters from constituents of the 15th Suffolk/Norfolk District and assisting in the organization of community events, fundraisers, and forums",
+            "- Participated in a health survey in which residents from the Bromley-Heath development in Jamaica Plain, MA were questioned about their state of well-being"
+          ],
+          "startDate": "2012-06-01",
+          "endDate": "2013-08-30",
+          "location": "Dorchester, MA"
         }
       ]
     }

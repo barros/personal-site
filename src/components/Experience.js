@@ -16,7 +16,7 @@ class Experience extends React.Component {
   render() {
     return <Container>
       <Row>
-        <Col>
+        <Col style={{color: "white"}}>
           {profile.experiences.map(function (experience, i) {
             moment.locale('en');
 
@@ -47,7 +47,7 @@ class Experience extends React.Component {
                   </Media>
                   <Media body>
                     <Media heading>
-                      <a href={experience.url}>{experience.companyName}</a>
+                      <a href={experience.url} style={{color: "black"}}>{experience.companyName}</a>
                       <span className="jobTotalDuration">{getDuration(totalDuration)}</span>
                     </Media>
 
@@ -55,13 +55,35 @@ class Experience extends React.Component {
                       const startDate = moment(role.startDate);
                       const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
                       const duration = timeEnd.diff(startDate, 'months');
+                      let tasks = []
+                      role.tasks.forEach(task => {
+                        console.log(task)
+                        tasks.push(task)
+                      });
+                      tasks.forEach(task => {
+                        console.log(task)
+                      });
+                      // const tasks = role.tasks.map(function (task, i) {
+                      //   console.log(task)
+                      //   return (task)
+                      // })
+                      // tasks.forEach(task => {
+                      //   console.log(task);
+                      // });
 
                       return <div key={i}>
-                        <h5>{role.title}</h5>
+                        <h5 style={{color: '#444444', fontWeight: 'bold'}}>{role.title}</h5>
                         <span
-                          className="jobDuration">{startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} ({getDuration(duration)})</span>
+                          className="jobDuration">{startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} ({getDuration(duration)})
+                        </span>
                         <span className="jobLocation">{role.location}</span>
-                        <p className="jobDescription">{role.description}</p>
+                        <ul>
+                          {
+                            tasks.map((task, i) => {
+                              return <li key={i} style={{ listStyleType: "none", color: 'black' }}> {task} </li>
+                            })
+                          }
+                        </ul>
                       </div>
                     })}
                   </Media>

@@ -20,10 +20,10 @@ class TopBar extends React.Component {
 
   render() {
 		return (
-			<Navbar color="dark" dark expand="md">
+			<Navbar style={{backgroundColor: "#6A8A82"}} dark expand="md">
         <Container>
           <NavbarBrand href="/">
-            <span>Jeffrey Barros Peña</span>
+            <span>jbp</span>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
