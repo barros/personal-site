@@ -10,7 +10,7 @@ class Education extends React.Component {
           {profile.studies.map(function (study, i) {
             return <Media key={i}>
               <Media left top href={study.url}>
-                <Media object src={study.logo} alt={study.institute}/>
+                <Media className="logo" object src={study.logo} alt={study.institute}/>
               </Media>
               <Media body>
                 <Media heading>

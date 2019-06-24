@@ -118,5 +118,27 @@
         }
       ]
     }
+  ],
+  "projects": [
+    {
+      "projectName": "Juke Jam",
+      "description": "An iOS app that allows users to accept and add song recommendations to playlists in real time. Ideal for event hosts.",
+      "githubLink": "https://github.com/barros/juke-jam"
+    },
+    {
+      "projectName": "Tip Request",
+      "description": "A utility iOS app that allows users to keep track of past food purchases and calculate a tip amount based on percentage.",
+      "githubLink": "https://github.com/barros/tip-request"
+    },
+    {
+      "projectName": "Peer Text Transfer",
+      "description": "Program to transfer text files using UDP & FTP",
+      "githubLink": "https://github.com/barros/p2p-text-file-transfer"
+    },
+    {
+      "projectName": "Spots Journal",
+      "description": "An iOS app designed to allow users to save locations with respective journal entries (still in development)",
+      "githubLink": "https://github.com/barros/spot-journals-ios"
+    }
   ]
 }

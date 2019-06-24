@@ -12,8 +12,7 @@ a:hover {
 }
 
 div.media {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  
 }
 
 div.media .media-heading .jobTotalDuration {
@@ -22,10 +21,19 @@ div.media .media-heading .jobTotalDuration {
   display: block;
 }
 
-div.media img {
+div.media .logo {
   height: 10vmin;
+  margin-top: 30px;
+  margin-bottom: 10px;
   margin-right: 10px;
   border-radius: 50px;
+}
+
+div.media .selfie {
+  box-sizing: content-box;
+  height: 35vmin;
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
 
 div.media .jobDuration {
@@ -59,11 +67,4 @@ footer a {
 .tabs {
   width: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-#navbar {
-  transition: top 0.5s
-}
-#profile {
-  transition: bottom 0.5s
 }
