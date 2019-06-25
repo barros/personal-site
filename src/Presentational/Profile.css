@@ -1,0 +1,22 @@
+.jumbotron {
+  background-image: url('../images/welcome-mural-jackson-square.jpg');
+  background-size: cover;
+}
+
+.display-3 {
+  font-weight: bold;
+  font-family: 'Josefin Sans'
+}
+
+div.media .selfie {
+  box-sizing: content-box;
+  height: 35vmin;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.lead {
+  color: white;
+  font-weight: bold;
+}
+

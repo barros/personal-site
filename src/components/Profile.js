@@ -1,10 +1,13 @@
 import React from 'react';
 import {Jumbotron, Container, TabContent, TabPane, Nav, NavItem, NavLink, Media } from "reactstrap";
 import classnames from 'classnames';
+
 import Experience from "./Experience";
 import Education from './Education';
+import ProjectCard from './ProjectCard';
 import profile from '../data/profile.json';
-import bgimage from '../images/welcome-mural-jackson-square.jpg';
+
+import '../Presentational/Profile.css'
 import selfie from '../images/jeff-selfie.jpg';
 
 class Profile extends React.Component {
@@ -37,20 +40,26 @@ class Profile extends React.Component {
 
 
   render() {
-    return <div className="profileBg">
-      <Jumbotron style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover' }}>
+    return <div>
+      <Jumbotron className="jumbotron">
         <Container>
-          <h1 className="display-3" style={{fontWeight: 'bold', fontFamily: 'Josefin Sans'}}>{profile.title}</h1>
-          <Media>
-            <Media className="selfie" object src={selfie} alt="Generic placeholder image" />
-          </Media>
+          <h1 className="display-3" >{profile.title}</h1>
+          <div style={{display: 'flex'}}>
+            <Media>
+              <Media className="selfie" object src={selfie} alt="Generic placeholder image" />
+            </Media>
+            <div>
+              <h5>{profile.location}</h5>
+            </div>
+          </div>
+          <h4>test</h4>
           <hr className="my-2" />
-          <p className="lead" style={{color: 'white', fontWeight: 'bold'}}>{profile.summary}</p>
+          <p className="lead">{profile.summary}</p>
         </Container>
       </Jumbotron>
 
       <Container>
-        <Nav className="tabs" style={{width: '100%'}} tabs>
+        <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt'}} tabs>
           <NavItem style={{backgroundColor: this.getTabColor('1')}}>
             <NavLink className={classnames({ active: this.state.activeTab === '1' })}
                      onClick={() => { this.toggle('1'); }}
@@ -80,7 +89,7 @@ class Profile extends React.Component {
             </NavLink>
           </NavItem>
         </Nav>
-        <TabContent activeTab={this.state.activeTab} style={{paddingTop: 20}}>
+        <TabContent activeTab={this.state.activeTab} style={{paddingTop: 20, paddingBottom: 20}}>
           <TabPane tabId="1">
             <Experience/>
           </TabPane>
@@ -88,7 +97,7 @@ class Profile extends React.Component {
             <Education/>
           </TabPane>
           <TabPane tabId="3"> 
-            <Education/>
+            <ProjectCard title="test" description="test 2"/>
           </TabPane>
           <TabPane tabId="4"> 
             <Education/>

@@ -7,60 +7,10 @@ a:hover {
   text-decoration: none;
 }
 
-.profileBg {
+.App {
   background-color: #e7e7e7;
-}
-
-div.media .media-heading .jobTotalDuration {
-  color: #666;
-  font-size: 14px;
-  display: block;
-}
-
-div.media .logo {
-  height: 10vmin;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border-radius: 50px;
-}
-
-div.media .selfie {
-  box-sizing: content-box;
-  height: 35vmin;
-  border-radius: 20px;
-  margin-bottom: 5px;
-}
-
-div.media .jobDuration {
-  color: #444;
-  display: block;
-  font-style: italic
-}
-
-div.media .jobLocation {
-  color: #666;
 }
 
 .formLabel {
   font-weight: bold;
-}
-
-footer {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-top: #444444;
-  text-align: center;
-}
-
-footer a {
-  color: black;
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.tabs {
-  width: auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

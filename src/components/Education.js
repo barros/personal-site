@@ -2,6 +2,8 @@ import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
 import profile from '../data/profile.json';
 
+import '../Presentational/Education.css'
+
 class Education extends React.Component {
   render() {
     return <Container>
@@ -10,7 +12,7 @@ class Education extends React.Component {
           {profile.studies.map(function (study, i) {
             return <Media key={i}>
               <Media left top href={study.url}>
-                <Media className="logo" object src={study.logo} alt={study.institute}/>
+                <Media className="eduLogo" object src={study.logo} alt={study.institute}/>
               </Media>
               <Media body>
                 <Media heading>

@@ -1,0 +1,22 @@
+div.media .media-heading .jobTotalDuration {
+  color: #666;
+  font-size: 14px;
+  display: block;
+}
+
+div.media .expLogo {
+  height: 10vmin;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+div.media .jobDuration {
+  color: #444;
+  display: block;
+  font-style: italic
+}
+
+div.media .jobLocation {
+  color: #666;
+}

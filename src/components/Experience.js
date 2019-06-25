@@ -4,6 +4,8 @@ import profile from "../data/profile";
 import moment from "moment";
 import { Media } from "reactstrap";
 
+import '../Presentational/Experience.css';
+
 function getDuration(duration) {
   const years = parseInt(duration / 12);
   const months = (duration > 12)? duration % 12 : duration;
@@ -43,7 +45,7 @@ class Experience extends React.Component {
               <div key={i}>
                 <Media>
                   <Media left top href={experience.url}>
-                    <Media className="logo" object src={experience.logo} alt={experience.companyName}/>
+                    <Media className="expLogo" object src={experience.logo} alt={experience.companyName}/>
                   </Media>
                   <Media body>
                     <Media heading>
@@ -57,11 +59,7 @@ class Experience extends React.Component {
                       const duration = timeEnd.diff(startDate, 'months');
                       let tasks = []
                       role.tasks.forEach(task => {
-                        console.log(task)
                         tasks.push(task)
-                      });
-                      tasks.forEach(task => {
-                        console.log(task)
                       });
                       // const tasks = role.tasks.map(function (task, i) {
                       //   console.log(task)
