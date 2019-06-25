@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
-import profile from '../data/profile.json';
+import profile from '../../../data/profile.json';
 
-import '../Presentational/Education.css'
+import '../../../Presentational/Education.css'
 
 class Education extends React.Component {
   render() {

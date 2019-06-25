@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import profile from "../data/profile";
+import profile from "../../../data/profile";
 import moment from "moment";
 import { Media } from "reactstrap";
 
-import '../Presentational/Experience.css';
+import '../../../Presentational/Experience.css';
 
 function getDuration(duration) {
   const years = parseInt(duration / 12);
@@ -70,9 +70,9 @@ class Experience extends React.Component {
                       // });
 
                       return <div key={i}>
-                        <h5 style={{color: '#444444', fontWeight: 'bold'}}>{role.title}</h5>
-                        <span
-                          className="jobDuration">{startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} ({getDuration(duration)})
+                        <h5 className="jobTitle">{role.title}</h5>
+                        <span className="jobDuration">
+                          {startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} ({getDuration(duration)})
                         </span>
                         <span className="jobLocation">{role.location}</span>
                         <ul>

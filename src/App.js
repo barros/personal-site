@@ -1,7 +1,7 @@
 import React from 'react';
 import './Presentational/App.css';
 import TopBar from './components/TopBar';
-import Profile from './components/Profile';
+import Profile from './components/Profile/Profile';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

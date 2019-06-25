@@ -1,16 +1,12 @@
 import React from 'react';
-import {Jumbotron, Container, TabContent, TabPane, Nav, NavItem, NavLink, Media } from "reactstrap";
+import { Container, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
-import Experience from "./Experience";
-import Education from './Education';
-import ProjectCard from './ProjectCard';
-import profile from '../data/profile.json';
+import Experience from './Tabs/Experience';
+import Education from './Tabs/Education';
+import ProjectCard from './Tabs/ProjectCard';
 
-import '../Presentational/Profile.css'
-import selfie from '../images/jeff-selfie.jpg';
-
-class Profile extends React.Component {
+class ProfileTabContent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -37,27 +33,9 @@ class Profile extends React.Component {
       });
     }
   }
-
-
+  
   render() {
-    return <div>
-      <Jumbotron className="jumbotron">
-        <Container>
-          <h1 className="display-3" >{profile.title}</h1>
-          <div style={{display: 'flex'}}>
-            <Media>
-              <Media className="selfie" object src={selfie} alt="Generic placeholder image" />
-            </Media>
-            <div>
-              <h5>{profile.location}</h5>
-            </div>
-          </div>
-          <h4>test</h4>
-          <hr className="my-2" />
-          <p className="lead">{profile.summary}</p>
-        </Container>
-      </Jumbotron>
-
+    return (
       <Container>
         <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt'}} tabs>
           <NavItem style={{backgroundColor: this.getTabColor('1')}}>
@@ -104,8 +82,8 @@ class Profile extends React.Component {
           </TabPane>
         </TabContent>
       </Container>
-    </div>;
+    );
   }
 }
 
-export default Profile;
+export default ProfileTabContent;
