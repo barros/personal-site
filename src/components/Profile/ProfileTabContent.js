@@ -11,7 +11,8 @@ class ProfileTabContent extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.getTabColor = this.getTabColor.bind(this);
+    this.getTabStyle = this.getTabStyle.bind(this);
+    this.isSelected = this.isSelected.bind(this);
     this.state = {
       activeTab: '1'
     };
@@ -19,11 +20,18 @@ class ProfileTabContent extends React.Component {
   activeTabColor = "white"
   inactiveTabColor = "#c4dad4"
 
-  getTabColor(tab) {
+  getTabStyle(tab) {
     if (this.state.activeTab === tab) {
-      return this.activeTabColor
+      return {backgroundColor: this.activeTabColor, borderTopRightRadius: '5px', borderTopLeftRadius: '5px', width: '250px', textAlign: 'center'}
     }
-    return this.inactiveTabColor
+    return {backgroundColor: this.inactiveTabColor, borderTopRightRadius: '5px', borderTopLeftRadius: '5px', width: '258px', textAlign: 'center'}
+  }
+
+  isSelected(tab) {
+    if (this.state.activeTab === tab) {
+      return {backgroundColor: '#9a7f53', width: '7px', borderTopRightRadius: '10px'}
+    }
+    return
   }
 
   toggle(tab) {
@@ -37,35 +45,39 @@ class ProfileTabContent extends React.Component {
   render() {
     return (
       <Container>
-        <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt'}} tabs>
-          <NavItem style={{backgroundColor: this.getTabColor('1')}}>
+        <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt', }} tabs>
+          <NavItem style={this.getTabStyle('1')}>
             <NavLink className={classnames({ active: this.state.activeTab === '1' })}
-                     onClick={() => { this.toggle('1'); }}
-                     style={{cursor: "pointer"}}>
+                    onClick={() => { this.toggle('1'); }}
+                    style={{cursor: "pointer"}}>
               Experience
             </NavLink>
           </NavItem>
-          <NavItem style={{backgroundColor: this.getTabColor('2')}}>
+          <span style={this.isSelected('1')} />
+          <NavItem style={this.getTabStyle('2')}>
             <NavLink className={classnames({ active: this.state.activeTab === '2' })}
                      onClick={() => { this.toggle('2'); }}
                      style={{cursor: "pointer"}}>
               Education
             </NavLink>
           </NavItem>
-          <NavItem style={{backgroundColor: this.getTabColor('3')}}>
+          <span style={this.isSelected('2')} />
+          <NavItem style={this.getTabStyle('3')}>
             <NavLink className={classnames({ active: this.state.activeTab === '3' })}
                      onClick={() => { this.toggle('3'); }}
                      style={{cursor: "pointer"}}>
               Projects
             </NavLink>
           </NavItem>
-          <NavItem style={{backgroundColor: this.getTabColor('4')}}>
+          <span style={this.isSelected('3')} />
+          <NavItem style={this.getTabStyle('4')}>
             <NavLink className={classnames({ active: this.state.activeTab === '4' })}
                      onClick={() => { this.toggle('4'); }}
                      style={{cursor: "pointer"}}>
               Skills
             </NavLink>
           </NavItem>
+          <span style={this.isSelected('4')} />
         </Nav>
         <TabContent activeTab={this.state.activeTab} style={{paddingTop: 20, paddingBottom: 20}}>
           <TabPane tabId="1">
