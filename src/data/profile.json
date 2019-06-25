@@ -1,6 +1,9 @@
 {
   "title": "Jeffrey Barros Peña",
   "summary": "I am a determined recent graduate who is passionate about the field of computer science and the development of software that betters the lives of its users. I look forward to excelling past the boundaries of my academic experience to continue learning about new technology stacks that make up the business world we live in.",
+  "location": "Boston, MA",
+  "birthdate": "1997-06-22",
+  "jobSearch": "Actively seeking full-time software engineering positions",
   "studies": [
     {
       "institute": "Boston College",
@@ -102,19 +105,19 @@
       ]
     },
     {
-      "companyName": "Massachusetts House of Representatives",
+      "companyName": "Massachusetts House of Representatives, Joint Committee on Public Health",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Seal_of_the_House_of_Representatives_of_Massachusetts.svg/800px-Seal_of_the_House_of_Representatives_of_Massachusetts.svg.png",
       "url": "https://malegislature.gov/People/Profile/J_S1",
       "roles": [
         {
-          "title": "Intern",
+          "title": "Intern, Office of Former State Representative Jeffrey Sánchez",
           "tasks": [
             "- Managed a team of 5 interns in assigned tasks that included receiving calls and letters from constituents of the 15th Suffolk/Norfolk District and assisting in the organization of community events, fundraisers, and forums",
             "- Participated in a health survey in which residents from the Bromley-Heath development in Jamaica Plain, MA were questioned about their state of well-being"
           ],
           "startDate": "2012-06-01",
           "endDate": "2013-08-30",
-          "location": "Dorchester, MA"
+          "location": "Boston, MA"
         }
       ]
     }
