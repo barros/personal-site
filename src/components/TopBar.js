@@ -7,18 +7,20 @@ class TopBar extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    // this.memojiStyle = this.memojiStyle.bind(this);
     this.state = {
       isOpen: false
     };
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+  toggle = (tab) => {
+    if (!tab) {
+      this.setState({ isOpen: true });
+    } else {
+      this.setState({ isOpen: !this.state.isOpen });
+      this.props.toggleTab(tab);
+    }
   }
+
   memojiStyle = {
     height: '35px',
     width: '35px',
@@ -38,7 +40,16 @@ class TopBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/profile/">Profile</NavLink>
+                <NavLink onClick={() => this.toggle('1')} style={{cursor: "pointer"}}>Experience</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => this.toggle('2')} style={{cursor: "pointer"}}>Education</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => this.toggle('3')} style={{cursor: "pointer"}}>Projects</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => this.toggle('4')} style={{cursor: "pointer"}}>Skills</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

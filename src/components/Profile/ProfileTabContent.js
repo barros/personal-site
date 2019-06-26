@@ -4,42 +4,40 @@ import classnames from 'classnames';
 
 import Experience from './Tabs/Experience';
 import Education from './Tabs/Education';
-import ProjectCard from './Tabs/ProjectCard';
+import Projects from './Tabs/Projects'
 
 class ProfileTabContent extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.getTabStyle = this.getTabStyle.bind(this);
-    this.isSelected = this.isSelected.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: props.activeTab
     };
   }
+  componentWillUpdate(props) {
+    console.log(`in ProfileTabContent.js -- componentWillUpdate -- props.activeTab: ${props.activeTab}`);
+    if (this.state.activeTab !== props.activeTab) {
+      this.setState({
+        activeTab: props.activeTab
+      });
+    }
+  }
+
   activeTabColor = "white"
   inactiveTabColor = "#c4dad4"
 
-  getTabStyle(tab) {
+  getTabStyle = (tab) => {
     if (this.state.activeTab === tab) {
       return {backgroundColor: this.activeTabColor, borderTopRightRadius: '5px', borderTopLeftRadius: '5px', width: '250px', textAlign: 'center'}
     }
     return {backgroundColor: this.inactiveTabColor, borderTopRightRadius: '5px', borderTopLeftRadius: '5px', width: '258px', textAlign: 'center'}
   }
 
-  isSelected(tab) {
+  isSelected = (tab) => {
     if (this.state.activeTab === tab) {
       return {backgroundColor: '#9a7f53', width: '7px', borderTopRightRadius: '10px'}
     }
     return
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-    }
   }
   
   render() {
@@ -48,7 +46,7 @@ class ProfileTabContent extends React.Component {
         <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt', }} tabs>
           <NavItem style={this.getTabStyle('1')}>
             <NavLink className={classnames({ active: this.state.activeTab === '1' })}
-                    onClick={() => { this.toggle('1'); }}
+                    onClick={() => { this.props.toggleTab('1'); }}
                     style={{cursor: "pointer"}}>
               Experience
             </NavLink>
@@ -56,7 +54,7 @@ class ProfileTabContent extends React.Component {
           <span style={this.isSelected('1')} />
           <NavItem style={this.getTabStyle('2')}>
             <NavLink className={classnames({ active: this.state.activeTab === '2' })}
-                     onClick={() => { this.toggle('2'); }}
+                     onClick={() => { this.props.toggleTab('2'); }}
                      style={{cursor: "pointer"}}>
               Education
             </NavLink>
@@ -64,7 +62,7 @@ class ProfileTabContent extends React.Component {
           <span style={this.isSelected('2')} />
           <NavItem style={this.getTabStyle('3')}>
             <NavLink className={classnames({ active: this.state.activeTab === '3' })}
-                     onClick={() => { this.toggle('3'); }}
+                     onClick={() => { this.props.toggleTab('3'); }}
                      style={{cursor: "pointer"}}>
               Projects
             </NavLink>
@@ -72,7 +70,7 @@ class ProfileTabContent extends React.Component {
           <span style={this.isSelected('3')} />
           <NavItem style={this.getTabStyle('4')}>
             <NavLink className={classnames({ active: this.state.activeTab === '4' })}
-                     onClick={() => { this.toggle('4'); }}
+                     onClick={() => { this.props.toggleTab('4'); }}
                      style={{cursor: "pointer"}}>
               Skills
             </NavLink>
@@ -81,16 +79,16 @@ class ProfileTabContent extends React.Component {
         </Nav>
         <TabContent activeTab={this.state.activeTab} style={{paddingTop: 20, paddingBottom: 20}}>
           <TabPane tabId="1">
-            <Experience/>
+            <Experience />
           </TabPane>
           <TabPane tabId="2">
-            <Education/>
+            <Education />
           </TabPane>
           <TabPane tabId="3"> 
-            <ProjectCard title="test" description="test 2"/>
+            <Projects />
           </TabPane>
           <TabPane tabId="4"> 
-            <Education/>
+            <Education />
           </TabPane>
         </TabContent>
       </Container>

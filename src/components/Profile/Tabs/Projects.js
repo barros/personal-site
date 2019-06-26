@@ -10,7 +10,9 @@ class Projects extends React.Component {
         <Row>
           <Col>
             {profile.projects.map(function (project, i) {
-
+              return (
+                <ProjectCard title={project.projectName} description={project.description}/>
+              );
             })}
           </Col>
         </Row>
