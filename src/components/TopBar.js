@@ -16,7 +16,9 @@ class TopBar extends React.Component {
     if (!tab) {
       this.setState({ isOpen: true });
     } else {
-      this.setState({ isOpen: !this.state.isOpen });
+      if (this.state.isOpen) {
+        this.setState({ isOpen: !this.state.isOpen });
+      }
       this.props.toggleTab(tab);
     }
   }
