@@ -13,13 +13,13 @@ class TopBar extends React.Component {
   }
 
   toggle = (tab) => {
-    if (!tab) {
-      this.setState({ isOpen: true });
-    } else {
+    if (tab==='1' || tab==='2' || tab==='3' || tab==='4') {
       if (this.state.isOpen) {
-        this.setState({ isOpen: !this.state.isOpen });
+        this.setState({ isOpen: false });
       }
       this.props.toggleTab(tab);
+    } else {
+      this.setState({ isOpen: !this.state.isOpen });
     }
   }
 
