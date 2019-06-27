@@ -1,8 +1,10 @@
 import React from 'react';
 import './Presentational/App.css';
 import TopBar from './components/TopBar';
-import Profile from './components/Profile/Profile';
+import ProfileHead from './components/Profile/ProfileHead';
+import ProfileTabContent from './components/Profile/ProfileTabContent';
 import Footer from './components/Footer';
+import scrollToComponent from 'react-scroll-to-component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -19,6 +21,7 @@ class App extends React.Component {
       this.setState({
         activeTab: tab
       });
+      scrollToComponent(this.tabs, { offset: -50, align: 'top', duration: 700});
     }
   }
 
@@ -26,7 +29,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <TopBar toggleTab={this.toggleTab}/>
-        <Profile activeTab={this.state.activeTab} toggleTab={this.toggleTab}/>
+        <ProfileHead />
+        <ProfileTabContent className="tabs" activeTab={this.state.activeTab} toggleTab={this.toggleTab} ref={(section) => { this.tabs = section; }}/>
         <Footer />
       </div>
     );
