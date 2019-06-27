@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import profile from "../../../data/profile";
 import ExperienceCard from './ExperienceCard.js';
 
@@ -7,15 +6,18 @@ import '../../../Presentational/Experience.css';
 
 class Experience extends React.Component {
   render() {
-    return <Container>
-      <Row>
-        <Col>
+    return (
+      <div>
+        <div style={{height: '15px'}}>
+          <hr className="my-2" /> 
+        </div>
+        <div>
           {profile.experiences.map(function (experience, i) {
-            return <ExperienceCard experience={experience}/>
-          })}
-        </Col>
-      </Row>
-    </Container>
+              return <ExperienceCard experience={experience}/>
+            })}
+        </div>
+      </div>
+    )
   }
 }
 

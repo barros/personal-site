@@ -27,16 +27,17 @@ class ExperienceCard extends React.Component {
       return Number(cnt) + Number(duration.asMonths().toPrecision(1));
     }, 0);
     return (
-      <div style={{backgroundColor: 'white', borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', padding: '15px', marginBottom: '30px', boxShadow: '10px 10px 20px #888888'}}>
+      <div style={{backgroundColor: 'white', borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '25px', paddingBottom: '15px', marginBottom: '30px', boxShadow: '10px 10px 20px #888888'}}>
         <Media>
           <Media left top href={experience.url}>
             <Media className="expLogo" object src={experience.logo} alt={experience.companyName}/>
           </Media>
           <Media body>
             <Media heading>
-              <a href={experience.url} style={{color: "black"}}>{experience.companyName}</a>
+              <a href={experience.url} style={{fontFamily: 'Quicksand', color: "black"}}>{experience.companyName}</a>
               <span className="jobTotalDuration">{ this.getDuration(totalDuration) }</span>
             </Media>
+            <hr className="my-2" />
             {roles.map(function (role, i) {
               const startDate = moment(role.startDate);
               const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
@@ -48,14 +49,14 @@ class ExperienceCard extends React.Component {
               let line = ((i !== roles.length-1) ? <hr className="my-2" /> : '');
 
               return <div key={i}>
-                <h5 className="jobTitle">{role.title}</h5>
+                <h5 style={{fontFamily: 'Poppins'}} className="jobTitle">{role.title}</h5>
                 <span className="jobDuration">
                   {startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} {() => this.getDuration(duration)}
                 </span>
                 <span className="jobLocation">{ role.location }</span>
                 {
                   tasks.map((task, i) => {
-                    return (<div>{ task }</div>);
+                    return (<div style={{fontFamily:'Poppins'}}>{ task }</div>);
                   })
                 }
                 {line}
