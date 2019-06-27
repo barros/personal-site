@@ -26,7 +26,8 @@
             "- Manage a staff of 45+ student technicians to help empower the provision of superior customer service",
             "- Bring tech support to the BC community as Walk-In Help Desk student manager and senior student technician",
             "- Review and enforce policies, particularly those pertaining to quality assurance",
-            "- Identify areas for improvement and make policy recommendations as appropriate"
+            "- Identify areas for improvement and make policy recommendations as appropriate",
+            "- Created the new EagleTech Walk-In Help Desk logo"
           ],
           "startDate": "2018-05-01",
           "currentJob": true,
@@ -90,7 +91,7 @@
     },
     {
       "companyName": "Cristo Rey Boston High School",
-      "logo": "https://media.licdn.com/dms/image/C560BAQFci67xgY2vSw/company-logo_400_400/0?e=1568851200&v=beta&t=iQo20XIORyf2KYRB8SmE3vBwqtsMqSfNPU2AAowBOdk",
+      "logo": "https://media.licdn.com/dms/image/C560BAQFci67xgY2vSw/company-logo_400_400/0?e=1569456000&v=beta&t=Z-bzKTL2rCajahC-R6P32WxAxO9kF6h5FYtL7t0ajcc",
       "url": "https://www.cristoreyboston.org/",
       "roles": [
         {
@@ -124,24 +125,32 @@
   ],
   "projects": [
     {
-      "projectName": "Juke Jam",
+      "title": "Juke Jam",
       "description": "An iOS app that allows users to accept and add song recommendations to playlists in real time. Ideal for event hosts.",
-      "githubLink": "https://github.com/barros/juke-jam"
+      "githubLink": "https://github.com/barros/juke-jam",
+      "titleColor": "maroon",
+      "font": "Comfortaa"
     },
     {
-      "projectName": "Tip Request",
+      "title": "Tip Request",
       "description": "A utility iOS app that allows users to keep track of past food purchases and calculate a tip amount based on percentage.",
-      "githubLink": "https://github.com/barros/tip-request"
+      "githubLink": "https://github.com/barros/tip-request",
+      "titleColor": "darkblue",
+      "font": ""
     },
     {
-      "projectName": "Peer Text Transfer",
+      "title": "Peer Text Transfer",
       "description": "Program to transfer text files using UDP & FTP",
-      "githubLink": "https://github.com/barros/p2p-text-file-transfer"
+      "githubLink": "https://github.com/barros/p2p-text-file-transfer",
+      "titleColor": "grey",
+      "font": ""
     },
     {
-      "projectName": "Spots Journal",
+      "title": "Spots Journal",
       "description": "An iOS app designed to allow users to save locations with respective journal entries (still in development)",
-      "githubLink": "https://github.com/barros/spot-journals-ios"
+      "githubLink": "https://github.com/barros/spot-journals-ios",
+      "titleColor": "grey",
+      "font": ""
     }
   ]
 }

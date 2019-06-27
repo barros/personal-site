@@ -23,8 +23,8 @@ class ExperienceCard extends React.Component {
     const totalDuration = roles.reduce(function (cnt, role) {
       const startDate = moment(role.startDate);
       const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
-      const duration = moment.duration(timeEnd.diff(startDate));
-      return Number(cnt) + Number(duration.asMonths().toPrecision(1));
+      const duration = timeEnd.diff(startDate, 'months');
+      return Number(cnt) + Number(duration);
     }, 0);
     return (
       <div style={{backgroundColor: 'white', borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '25px', paddingBottom: '15px', marginBottom: '30px', boxShadow: '10px 10px 20px #888888'}}>

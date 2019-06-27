@@ -12,7 +12,7 @@ div.media .selfie {
   box-sizing: content-box;
   height: 35vmin;
   border-radius: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .lead {
@@ -20,3 +20,14 @@ div.media .selfie {
   font-weight: bold;
 }
 
+#location {
+  color: white;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+#age {
+  color: white;
+  margin-bottom: 0;
+  font-size: 20px;
+}
