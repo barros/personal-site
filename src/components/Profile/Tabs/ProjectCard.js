@@ -3,10 +3,6 @@ import '../../../Presentational/ProjectCard.css';
 import GithubButton from '../../../buttons/ghProjectButton';
 
 class ProjectCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   cardStyle = {
     display: 'flex', 
     flexDirection: 'column',

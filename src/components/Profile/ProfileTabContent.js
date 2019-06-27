@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
-
 import Experience from './Tabs/Experience';
 import Education from './Tabs/Education';
-import Projects from './Tabs/Projects'
+import Projects from './Tabs/Projects';
+
+import '../../Presentational/Profile.css';
 
 class ProfileTabContent extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class ProfileTabContent extends React.Component {
   render() {
     return (
       <Container>
-        <Nav style={{fontFamily: 'Josefin Sans', fontSize: '14pt', }} tabs>
+        <Nav style={{justifyContent: 'center', fontFamily: 'Josefin Sans', fontSize: '14pt', }} tabs>
           <NavItem style={this.getTabStyle('1')}>
             <NavLink className={classnames({ active: this.state.activeTab === '1' })}
                     onClick={() => { this.props.toggleTab('1'); }}

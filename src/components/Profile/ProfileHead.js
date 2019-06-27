@@ -11,7 +11,6 @@ class ProfileHead extends React.Component {
     const bday = moment(profile.birthdate);
     const today = moment(new Date());
     const age = today.diff(bday, 'years');
-    console.log(age);
     return (`${age} years old`)
   }
   render() {

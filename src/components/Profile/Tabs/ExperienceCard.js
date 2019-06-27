@@ -3,10 +3,6 @@ import { Media } from 'reactstrap';
 import moment from 'moment';
 
 class ExperienceCard extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   getDuration = (duration) => {
     const years = parseInt(duration / 12);
     const months = (duration > 12)? duration % 12 : duration;
