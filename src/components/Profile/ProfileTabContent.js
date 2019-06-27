@@ -15,7 +15,6 @@ class ProfileTabContent extends React.Component {
     };
   }
   componentWillUpdate(props) {
-    console.log(`in ProfileTabContent.js -- componentWillUpdate -- props.activeTab: ${props.activeTab}`);
     if (this.state.activeTab !== props.activeTab) {
       this.setState({
         activeTab: props.activeTab
