@@ -68,14 +68,14 @@ class ProfileTabContent extends React.Component {
             </NavLink>
           </NavItem>
           <span style={this.isSelected('3')} />
-          <NavItem style={this.getTabStyle('4')}>
+          {/* <NavItem style={this.getTabStyle('4')}>
             <NavLink className={classnames({ active: this.state.activeTab === '4' })}
                      onClick={() => { this.props.toggleTab('4'); }}
                      style={{cursor: "pointer"}}>
               Skills
             </NavLink>
           </NavItem>
-          <span style={this.isSelected('4')} />
+          <span style={this.isSelected('4')} /> */}
         </Nav>
         <TabContent activeTab={this.state.activeTab} style={{paddingTop: 20, paddingBottom: 20}}>
           <TabPane tabId="1">
@@ -87,9 +87,9 @@ class ProfileTabContent extends React.Component {
           <TabPane tabId="3"> 
             <Projects />
           </TabPane>
-          <TabPane tabId="4"> 
+          {/* <TabPane tabId="4"> 
             <Education />
-          </TabPane>
+          </TabPane> */}
         </TabContent>
       </Container>
     );

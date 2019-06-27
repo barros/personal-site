@@ -13,6 +13,7 @@ class TopBar extends React.Component {
   }
 
   toggle = (tab) => {
+    // add "tab==='4'" to conditional when new tab is added
     if (tab==='1' || tab==='2' || tab==='3' || tab==='4') {
       if (this.state.isOpen) {
         this.setState({ isOpen: false });
@@ -50,9 +51,9 @@ class TopBar extends React.Component {
               <NavItem>
                 <NavLink onClick={() => this.toggle('3')} style={{cursor: "pointer"}}>Projects</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink onClick={() => this.toggle('4')} style={{cursor: "pointer"}}>Skills</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>
