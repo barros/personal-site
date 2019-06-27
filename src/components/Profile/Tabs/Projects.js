@@ -6,17 +6,18 @@ import profile from '../../../data/profile.json';
 class Projects extends React.Component {
   render() {
     return (
-      <Container>
-        <Row>
-          <Col>
-            {profile.projects.map(function (project, i) {
-              return (
-                <ProjectCard title={project.projectName} description={project.description}/>
-              );
-            })}
-          </Col>
-        </Row>
-      </Container>
+      <div>
+        <div style={{height: '15px'}}>
+          <hr className="my-2" /> 
+        </div>
+        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}}>
+          {profile.projects.map(function (project, i) {
+            return (
+              <ProjectCard project={project}/>
+            );
+          })}
+        </div>
+      </div>
     );
   }
 }
