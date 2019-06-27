@@ -12,8 +12,6 @@ class ghProjectButton extends React.Component {
     });
   }
 
-  buttonStyle = {marginTop: '', bottom: '0px', backgroundColor: '#c4dad4', color: 'black'}
-
   onHover = () => {
     this.setState({
       hover: !this.state.hover
@@ -27,10 +25,11 @@ class ghProjectButton extends React.Component {
     } else {
       buttonColor = '#f8f8f8'
     }
+    const buttonStyle = {backgroundColor: '#c4dad4', color: buttonColor, boxShadow: '2px 2px 5px #888888'}
 
     return (
       <div>
-        <Button href={this.props.link} target='_blank' style={{marginTop: '', bottom: '0px', backgroundColor: buttonColor, color: 'black', boxShadow: '2px 2px 5px #888888'}}  onMouseEnter={this.onHover} onMouseLeave={this.onHover} block>
+        <Button href={this.props.link} target='_blank' style={{marginTop: '', bottom: '0px', backgroundColor: buttonColor, color: 'black'}}  onMouseEnter={this.onHover} onMouseLeave={this.onHover} block>
           View GitHub Repo 
           <FontAwesomeIcon style={{marginLeft:'10px'}} icon={faGithub} size='lg'/>
         </Button>

@@ -6,9 +6,12 @@ import '../../../Presentational/Education.css'
 
 class Education extends React.Component {
   render() {
-    return <Container>
-      <Row>
-        <Col style={{color: "white"}}>
+    return (
+      <div>
+        <div style={{height: '15px'}}>
+          <hr className="my-2" /> 
+        </div>
+        <div>
           {profile.studies.map(function (study, i) {
             return <Media key={i}>
               <Media left top href={study.url}>
@@ -43,10 +46,9 @@ class Education extends React.Component {
               </Media>
             </Media>
           })}
-        </Col>
-      </Row>
-      <br/>
-    </Container>
+        </div>
+      </div>
+    );
   }
 }
 
