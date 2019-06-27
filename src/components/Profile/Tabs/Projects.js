@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col} from 'reactstrap';
 import ProjectCard from './ProjectCard';
 import profile from '../../../data/profile.json';
 

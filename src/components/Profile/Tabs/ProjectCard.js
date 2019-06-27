@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import '../../../Presentational/ProjectCard.css';
 import GithubButton from '../../../buttons/ghProjectButton';
 
@@ -7,7 +6,7 @@ class ProjectCard extends React.Component {
   constructor(props) {
     super(props);
   }
-  
+
   cardStyle = {
     display: 'flex', 
     flexDirection: 'column',
