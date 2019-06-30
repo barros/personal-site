@@ -3,6 +3,7 @@ import { Jumbotron, Container, Media, Alert } from 'reactstrap';
 import profile from '../../data/profile.json';
 import moment from 'moment';
 import selfie from '../../images/jeff-selfie.jpg';
+import Resume from '../../buttons/ResumeButton';
 
 import '../../Presentational/Profile.css'
 
@@ -28,6 +29,7 @@ class ProfileHead extends React.Component {
             </div>
           </div>
           <Alert color="primary" style={{textAlign: 'center', fontWeight: 'bold', boxShadow: '5px 5px 15px black'}}>{profile.jobSearch}</Alert>
+          <Resume />
           <hr className="my-2" />
           <p className="lead">{profile.summary}</p>
         </Container>
