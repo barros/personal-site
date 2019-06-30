@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../Presentational/ProjectCard.css';
-import GithubButton from '../../../buttons/ghProjectButton';
+import GithubButton from '../../../buttons/GHProjectButton';
 
 class ProjectCard extends React.Component {
   cardStyle = {
