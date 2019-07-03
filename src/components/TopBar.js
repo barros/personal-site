@@ -25,10 +25,10 @@ class TopBar extends React.Component {
   }
 
   memojiStyle = {
-    height: '35px',
-    width: '35px',
+    height: '40px',
+    width: '38.5px',
     marginRight: '10px',
-    borderRadius: '55px'
+    borderRadius: '50px'
   }
 
   render() {
