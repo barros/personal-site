@@ -144,15 +144,15 @@
         "PostgreSQL",
         "Alamofire + SwiftyJSON",
         "Apple Music API",
-        "expresss"
+        "express"
       ]
     },
     {
       "title": "Peer Text Transfer",
       "description": "Program to transfer text files using UDP & FTP",
       "githubLink": "https://github.com/barros/p2p-text-file-transfer",
-      "titleColor": "grey",
-      "font": "",
+      "titleColor": "black",
+      "font": "Josefin Sans",
       "techStack": [
         "Java",
         "User Datagram Protocol (UDP)",
@@ -164,7 +164,7 @@
       "description": "A utility iOS app that allows users to save past food purchases locally and calculate a tip amount based on percentage.",
       "githubLink": "https://github.com/barros/tip-request",
       "titleColor": "darkblue",
-      "font": "",
+      "font": "Quicksand",
       "techStack": [
         "Swift",
         "UserDefaults"
@@ -175,7 +175,7 @@
       "description": "The Android equivalent of Tip Request iOS but with added features. With the integrated Google sign-in, you can view your history of past transactions across different devices. The history is all saved with Google Firebase. Quick Tip is where you can calculate tips on the go and subsequently add them to your history of past transactions if you please. The ability to search for dining establishments using the Google Maps API gives user the ability to save spots and view them on a map.",
       "githubLink": "https://github.com/barros/tip-request-android",
       "titleColor": "darkblue",
-      "font": "",
+      "font": "Quicksand",
       "techStack": [
         "Java",
         "Google Sign-In",
@@ -187,12 +187,13 @@
       "title": "Spots Journal",
       "description": "An iOS app designed to allow users to save locations with respective journal entries (still in development)",
       "githubLink": "https://github.com/barros/spot-journals-ios",
-      "titleColor": "grey",
-      "font": "",
+      "titleColor": "black",
+      "font": "Josefin Sans",
       "techStack": [
         "Swift",
         "Alamofire + SwiftyJSON",
-        "Google Maps & Google Places API"
+        "Google Maps & Google Places API",
+        "MongoDB"
       ]
     }
   ]
