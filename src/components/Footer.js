@@ -15,8 +15,8 @@ class Footer extends React.Component {
           Connect With Me!
         </h4>
         <Container className="links">
-          <a href="https://www.linkedin.com/in/jeffreybarrospena/"><FontAwesomeIcon icon={faLinkedin} /></a>
-          <a href="https://github.com/barros"><FontAwesomeIcon icon={faGithub}  /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jeffreybarrospena/"><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a target="_blank" href="https://github.com/barros"><FontAwesomeIcon icon={faGithub}  /></a>
           <a href="mailto:jeff@barrospena.com"><FontAwesomeIcon icon={faEnvelope} /></a>
         </Container>
       </footer>

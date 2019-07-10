@@ -25,12 +25,12 @@ class ExperienceCard extends React.Component {
     return (
       <div style={{backgroundColor: 'white', borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '25px', paddingBottom: '15px', marginBottom: '30px', boxShadow: '10px 10px 20px #888888'}}>
         <Media>
-          <Media left top href={experience.url}>
+          <Media left top target="_blank" href={experience.url}>
             <Media className="expLogo" object src={experience.logo} alt={experience.companyName}/>
           </Media>
           <Media body>
             <Media heading>
-              <a href={experience.url} style={{fontFamily: 'Quicksand', color: "black"}}>{experience.companyName}</a>
+              <a target="_blank" href={experience.url} style={{fontFamily: 'Quicksand', color: "black"}}>{experience.companyName}</a>
               <span className="jobTotalDuration">{ this.getDuration(totalDuration) }</span>
             </Media>
             <hr className="my-2" />

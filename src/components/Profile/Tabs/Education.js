@@ -16,12 +16,12 @@ class Education extends React.Component {
             let logoBorderRadius = i === 1 ? '80px' : '';
             return (
               <Media style={{marginTop: '15px'}} key={i}>
-                <Media left top href={study.url}>
+                <Media left top href={study.url} target="_blank">
                   <Media className="eduLogo" object src={study.logo} alt={study.institute} style={{borderRadius: logoBorderRadius}}/>
                 </Media>
                 <Media body>
                   <Media heading>
-                    <a href={study.url} style={{color:"black"}}>{study.institute}</a>
+                    <a href={study.url} target="_blank" style={{color:"black"}}>{study.institute}</a>
                     <h6 style={{color: '#343a40'}}>{study.title}</h6>
                   </Media>
                   {
