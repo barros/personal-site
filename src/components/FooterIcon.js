@@ -6,13 +6,13 @@ class FooterIcon extends React.Component {
     super(props);
     this.state = ({
       color: "black",
-      size: "xl"
+      size: "sm"
     })
   }
 
   mouseEnter = () => {
     this.setState({
-      color: "red",
+      color: "#9a7f53",
       size: "lg"
     });
   }
@@ -20,7 +20,7 @@ class FooterIcon extends React.Component {
   mouseLeave = () => {
     this.setState({
       color: "black",
-      size: "md"
+      size: "sm"
     });
   }
 
