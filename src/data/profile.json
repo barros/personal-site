@@ -31,8 +31,9 @@
         {
           "title": "Lead Student Technology Specialist",
           "tasks": [
-            "- Manage a staff of 45+ student technicians to help empower the provision of superior customer service",
             "- Bring tech support to the BC community as Walk-In Help Desk student manager and senior student technician",
+            "- Manage a staff of 40+ student technicians to help empower the provision of superior customer service",
+            "- Write and maintain batch files and Python scripts to automate program installation",
             "- Review and enforce policies, particularly those pertaining to quality assurance",
             "- Identify areas for improvement and make policy recommendations as appropriate",
             "- Created the new EagleTech Walk-In Help Desk logo"
@@ -44,11 +45,11 @@
         {
           "title": "Student Technology Specialist",
           "tasks": [
-            "- Reimaged Macs and PCs, installed Bootcamp on Macs, replaced hard drives, ran hard drive and RAM tests",
+            "- Troubleshoot, reimage Macs and PCs, install Bootcamp on Macs, replace hard drives, run hard drive and RAM tests",
             "- Offered the Boston College student community technical support emphasizing customer service and professionalism"
           ],
-          "startDate": "2016-01-01",
-          "endDate": "2018-01-01",
+          "startDate": "2015-09-01",
+          "currentJob": true,
           "location": "Chestnut Hill, MA"
         },
         {
@@ -125,8 +126,12 @@
             "- Managed a team of 5 interns in assigned tasks that included receiving calls and letters from constituents of the 15th Suffolk/Norfolk District and assisting in the organization of community events, fundraisers, and forums",
             "- Participated in a health survey in which residents from the Bromley-Heath development in Jamaica Plain, MA were questioned about their state of well-being"
           ],
-          "startDate": "2012-06-01",
-          "endDate": "2013-08-30",
+          "internship": true,
+          "period": "Summer",
+          "year": [
+            "2012",
+            "2013"
+          ],
           "location": "Boston, MA"
         }
       ]

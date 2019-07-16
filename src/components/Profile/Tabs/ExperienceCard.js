@@ -11,17 +11,25 @@ class ExperienceCard extends React.Component {
     return (months === 0 ? yearsText : (years >= 1 ? (`${yearsText} and ${monthsText}`) : monthsText));
   }
 
-
   render() {
     const experience = this.props.experience;
     const roles = experience.roles;
     moment.locale('en');
-    const totalDuration = roles.reduce(function (cnt, role) {
-      const startDate = moment(role.startDate);
-      const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
-      const duration = timeEnd.diff(startDate, 'months');
-      return Number(cnt) + Number(duration);
-    }, 0);
+    let totalDuration = 0;
+    let presentDate;
+    roles.forEach(role => {
+      if (role.currentJob) {
+        presentDate = moment(role.startDate);
+      } else {
+        const startDate = moment(role.startDate);
+        const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
+        totalDuration += timeEnd.diff(startDate, 'months');
+      }
+    });
+    if (presentDate) {
+      const currentDate = moment(new Date());
+      totalDuration += currentDate.diff(presentDate, 'months');
+    }
     return (
       <div style={{backgroundColor: 'white', borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', paddingLeft: '15px', paddingRight: '15px', paddingTop: '25px', paddingBottom: '15px', marginBottom: '30px', boxShadow: '10px 10px 20px #888888'}}>
         <Media>
@@ -37,26 +45,37 @@ class ExperienceCard extends React.Component {
             {roles.map(function (role, i) {
               const startDate = moment(role.startDate);
               const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
-              const duration = timeEnd.diff(startDate, 'months');
               let tasks = []
               role.tasks.forEach(task => {
                 tasks.push(task)
               });
               let line = ((i !== roles.length-1) ? <hr className="my-2" /> : '');
-
-              return <div key={i}>
-                <h5 style={{fontFamily: 'Poppins'}} className="jobTitle">{role.title}</h5>
-                <span className="jobDuration">
-                  {startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')} {() => this.getDuration(duration)}
-                </span>
-                <span className="jobLocation">{ role.location }</span>
-                {
-                  tasks.map((task, i) => {
-                    return (<div style={{fontFamily:'Poppins'}}>{ task }</div>);
-                  })
-                }
-                {line}
-              </div>
+              let period;
+              if (role.internship) {
+                period = `${role.period} `;
+                role.year.forEach((year, i) => {
+                  if (i==0) {
+                    period += year
+                  } else {
+                    period += `, ${year}`
+                  }
+                });
+              } else {
+                period = `${startDate.format('MMM YYYY')} - ${role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')}`
+              }
+              return (<div key={i}>
+                        <h5 style={{fontFamily: 'Poppins'}} className="jobTitle">{role.title}</h5>
+                        <span className="jobDuration">
+                          {period}
+                        </span>
+                        <span className="jobLocation">{ role.location }</span>
+                        {
+                          tasks.map((task, i) => {
+                            return (<div style={{fontFamily:'Poppins'}}>{ task }</div>);
+                          })
+                        }
+                        {line}
+                    </div>)
             })}
           </Media>
         </Media>
