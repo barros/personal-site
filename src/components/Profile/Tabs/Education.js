@@ -21,7 +21,7 @@ class Education extends React.Component {
                 </Media>
                 <Media body>
                   <Media heading>
-                    <a href={study.url} target="_blank" style={{color:"black"}}>{study.institute}</a>
+                    <a href={study.url} target="_blank" rel="noopener noreferrer" style={{color:"black"}}>{study.institute}</a>
                     <h6 style={{color: '#343a40'}}>{study.title}</h6>
                   </Media>
                   {

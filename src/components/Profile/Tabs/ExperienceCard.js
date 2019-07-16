@@ -30,7 +30,7 @@ class ExperienceCard extends React.Component {
           </Media>
           <Media body>
             <Media heading>
-              <a target="_blank" href={experience.url} style={{fontFamily: 'Quicksand', color: "black"}}>{experience.companyName}</a>
+              <a target="_blank" rel="noopener noreferrer" href={experience.url} style={{fontFamily: 'Quicksand', color: "black"}}>{experience.companyName}</a>
               <span className="jobTotalDuration">{ this.getDuration(totalDuration) }</span>
             </Media>
             <hr className="my-2" />
