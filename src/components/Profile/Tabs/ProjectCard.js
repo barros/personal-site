@@ -67,7 +67,6 @@ class ProjectCard extends React.Component {
     const techStack = project.techStack;
     let techStackDiv;
     if (techStack) {
-      let techStackStyle = {}
       techStackDiv = (<div style={{marginBottom: '10px'}}>
         <h5 style={{fontFamily: 'Poppins', fontWeight: 'bold', color: '#44444'}}>Tech Stack</h5>
         {
