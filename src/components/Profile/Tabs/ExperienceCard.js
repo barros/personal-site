@@ -18,14 +18,21 @@ class ExperienceCard extends React.Component {
     let totalDuration = 0;
     let presentDate;
     roles.forEach(role => {
-      if (role.currentJob) {
-        presentDate = moment(role.startDate);
+      if (role.internship) {
+        if (role.period === "Summer") {
+          totalDuration += role.year.length * 3;
+        }
       } else {
-        const startDate = moment(role.startDate);
-        const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
-        totalDuration += timeEnd.diff(startDate, 'months');
+        if (role.currentJob) {
+          presentDate = moment(role.startDate);
+        } else {
+          const startDate = moment(role.startDate);
+          const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
+          totalDuration += timeEnd.diff(startDate, 'months');
+        }
       }
     });
+    console.log(totalDuration)
     if (presentDate) {
       const currentDate = moment(new Date());
       totalDuration += currentDate.diff(presentDate, 'months');
@@ -54,7 +61,7 @@ class ExperienceCard extends React.Component {
               if (role.internship) {
                 period = `${role.period} `;
                 role.year.forEach((year, i) => {
-                  if (i==0) {
+                  if (i===0) {
                     period += year
                   } else {
                     period += `, ${year}`
