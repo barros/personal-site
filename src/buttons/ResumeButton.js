@@ -29,7 +29,7 @@ class ResumeButton extends React.Component {
     const buttonStyle = {backgroundColor: buttonColor, color: color, fontWeight: 'bold'}
 
     return (
-      <Button href='https://drive.google.com/file/d/1TyErxrtPH3xjY3XuCEz2SThEQTHVOsl4/view?usp=sharing'
+      <Button href='https://drive.google.com/file/d/1zAodQ8JSoM9xGnTBiGJE_GbwXAe0WpzM/view?usp=sharing'
               target='_blank'
               onMouseEnter={this.onHover}
               onMouseLeave={this.onHover}
