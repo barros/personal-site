@@ -139,6 +139,20 @@
   ],
   "projects": [
     {
+      "title": "Boston College PaperCut Print Monitor",
+      "description": "Full stack web application that pings the PaperCut Print Management API to receive the statuses of all PaperCut print release stations across the entire Boston College campus. As a monitor that updates in real time, staff are able to know if their printers are online, out of paper, toner, etc. This app was created during a transition period from the university's previous print manangement software to PaperCut's software. With filtering by location, staff can easily manage their respective print location.",
+      "githubLink": "https://github.com/barros/papercut-print-monitor",
+      "titleColor": "maroon",
+      "font": "Montserrat",
+      "techStack": [
+        "React",
+        "Node.js",
+        "express",
+        "MongoDB",
+        "Socket.IO"
+      ]
+    },
+    {
       "title": "Juke Jam",
       "description": "An iOS app that allows users to accept and add song recommendations to playlists in real time. Ideal for event hosts.",
       "githubLink": "https://github.com/barros/juke-jam",
