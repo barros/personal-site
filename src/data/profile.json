@@ -128,10 +128,7 @@
           ],
           "internship": true,
           "period": "Summer",
-          "year": [
-            "2012",
-            "2013"
-          ],
+          "year": ["2012", "2013"],
           "location": "Boston, MA"
         }
       ]
@@ -144,13 +141,7 @@
       "githubLink": "https://github.com/barros/papercut-print-monitor",
       "titleColor": "maroon",
       "font": "Montserrat",
-      "techStack": [
-        "React",
-        "Node.js",
-        "express",
-        "MongoDB",
-        "Socket.IO"
-      ]
+      "techStack": ["React", "Node.js", "express", "MongoDB", "Socket.IO"]
     },
     {
       "title": "Juke Jam",
@@ -158,13 +149,7 @@
       "githubLink": "https://github.com/barros/juke-jam",
       "titleColor": "maroon",
       "font": "Comfortaa",
-      "techStack": [
-        "Swift",
-        "PostgreSQL",
-        "Alamofire + SwiftyJSON",
-        "Apple Music API",
-        "express"
-      ]
+      "techStack": ["Swift", "PostgreSQL", "Alamofire + SwiftyJSON", "Apple Music API", "express"]
     },
     {
       "title": "Peer Text Transfer",
@@ -172,11 +157,7 @@
       "githubLink": "https://github.com/barros/p2p-text-file-transfer",
       "titleColor": "black",
       "font": "Josefin Sans",
-      "techStack": [
-        "Java",
-        "User Datagram Protocol (UDP)",
-        "File Transfer Protocol"
-      ]
+      "techStack": ["Java", "User Datagram Protocol (UDP)", "File Transfer Protocol"]
     },
     {
       "title": "Tip Request iOS",
@@ -184,10 +165,7 @@
       "githubLink": "https://github.com/barros/tip-request",
       "titleColor": "darkblue",
       "font": "Quicksand",
-      "techStack": [
-        "Swift",
-        "UserDefaults"
-      ]
+      "techStack": ["Swift", "UserDefaults"]
     },
     {
       "title": "Tip Request Android",
@@ -195,12 +173,7 @@
       "githubLink": "https://github.com/barros/tip-request-android",
       "titleColor": "darkblue",
       "font": "Quicksand",
-      "techStack": [
-        "Java",
-        "Google Sign-In",
-        "Google Maps API",
-        "Google Firebase"
-      ]
+      "techStack": ["Java", "Google Sign-In", "Google Maps API", "Google Firebase"]
     },
     {
       "title": "Spots Journal",
@@ -208,12 +181,7 @@
       "githubLink": "https://github.com/barros/spot-journals-ios",
       "titleColor": "black",
       "font": "Josefin Sans",
-      "techStack": [
-        "Swift",
-        "Alamofire + SwiftyJSON",
-        "Google Maps & Google Places API",
-        "MongoDB"
-      ]
+      "techStack": ["Swift", "Alamofire + SwiftyJSON", "Google Maps & Google Places API", "MongoDB"]
     }
   ]
 }

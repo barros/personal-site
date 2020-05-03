@@ -9,28 +9,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       activeTab: '1'
     };
   }
-  
-  toggleTab = (tab) => {
+
+  toggleTab = tab => {
     if (this.state.activeTab !== tab) {
       this.setState({
         activeTab: tab
       });
-      scrollToComponent(this.tabs, { offset: -50, align: 'top', duration: 700});
+      scrollToComponent(this.tabs, { offset: -50, align: 'top', duration: 700 });
     }
-  }
+  };
 
   render() {
     return (
       <div className="App">
-        <TopBar toggleTab={this.toggleTab}/>
+        <TopBar toggleTab={this.toggleTab} />
         <ProfileHead />
-        <ProfileTabContent className="tabs" activeTab={this.state.activeTab} toggleTab={this.toggleTab} ref={(section) => { this.tabs = section; }}/>
+        <ProfileTabContent
+          className="tabs"
+          activeTab={this.state.activeTab}
+          toggleTab={this.toggleTab}
+          ref={section => {
+            this.tabs = section;
+          }}
+        />
         <Footer />
       </div>
     );

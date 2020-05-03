@@ -6,14 +6,12 @@ class Projects extends React.Component {
   render() {
     return (
       <div>
-        <div style={{height: '15px'}}>
-          <hr className="my-2" /> 
+        <div style={{ height: '15px' }}>
+          <hr className="my-2" />
         </div>
-        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
           {profile.projects.map(function (project, i) {
-            return (
-              <ProjectCard project={project}/>
-            );
+            return <ProjectCard project={project} />;
           })}
         </div>
       </div>

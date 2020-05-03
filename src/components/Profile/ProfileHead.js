@@ -5,30 +5,35 @@ import moment from 'moment';
 import selfie from '../../images/jeff-selfie.jpg';
 import Resume from '../../buttons/ResumeButton';
 
-import '../../Presentational/Profile.css'
+import '../../Presentational/Profile.css';
 
 class ProfileHead extends React.Component {
   getBday = () => {
     const bday = moment(profile.birthdate);
     const today = moment(new Date());
     const age = today.diff(bday, 'years');
-    return (`${age} years old`)
-  }
+    return `${age} years old`;
+  };
   render() {
     return (
       <Jumbotron className="jumbotron">
         <Container>
-          <h1 className="display-3" >{profile.title}</h1>
-          <div style={{display: 'flex'}}>
+          <h1 className="display-3">{profile.title}</h1>
+          <div style={{ display: 'flex' }}>
             <Media>
               <Media className="selfie" object src={selfie} alt="Generic placeholder image" />
             </Media>
-            <div style={{marginLeft: 30}}>
+            <div style={{ marginLeft: 30 }}>
               <div id="location">{profile.location}</div>
               <div id="age">{this.getBday()}</div>
             </div>
           </div>
-          <Alert color="primary" style={{textAlign: 'center', fontWeight: 'bold', boxShadow: '5px 5px 15px black'}}>{profile.jobSearch}</Alert>
+          <Alert
+            color="primary"
+            style={{ textAlign: 'center', fontWeight: 'bold', boxShadow: '5px 5px 15px black' }}
+          >
+            {profile.jobSearch}
+          </Alert>
           <Resume />
           <hr className="my-2" />
           <p className="lead">{profile.summary}</p>
