@@ -3,7 +3,6 @@
   "summary": "I am a determined recent graduate who is passionate about the field of computer science and the development of software that betters the lives of its users. I look forward to excelling past the boundaries of my academic experience to continue learning about new technology stacks that make up the business world we live in.",
   "location": "Boston, MA",
   "birthdate": "1997-06-22",
-  "jobSearch": "Actively seeking full-time software engineering positions",
   "studies": [
     {
       "institute": "Boston College",
@@ -39,7 +38,7 @@
             "- Created the new EagleTech Walk-In Help Desk logo"
           ],
           "startDate": "2018-05-01",
-          "currentJob": true,
+          "endDate": "2019-10-01",
           "location": "Chestnut Hill, MA"
         },
         {
@@ -49,7 +48,7 @@
             "- Offered the Boston College student community technical support emphasizing customer service and professionalism"
           ],
           "startDate": "2015-09-01",
-          "currentJob": true,
+          "endDate": "2019-10-01",
           "location": "Chestnut Hill, MA"
         },
         {

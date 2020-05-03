@@ -15,6 +15,15 @@ class ProfileHead extends React.Component {
     return `${age} years old`;
   };
   render() {
+    const jobSearchBanner = profile.jobSearch ? (
+      <Alert
+        color="primary"
+        style={{ textAlign: 'center', fontWeight: 'bold', boxShadow: '5px 5px 15px black' }}
+      >
+        {profile.jobSearch}
+      </Alert>
+    ) : null;
+
     return (
       <Jumbotron className="jumbotron">
         <Container>
@@ -28,12 +37,7 @@ class ProfileHead extends React.Component {
               <div id="age">{this.getBday()}</div>
             </div>
           </div>
-          <Alert
-            color="primary"
-            style={{ textAlign: 'center', fontWeight: 'bold', boxShadow: '5px 5px 15px black' }}
-          >
-            {profile.jobSearch}
-          </Alert>
+          {jobSearchBanner}
           <Resume />
           <hr className="my-2" />
           <p className="lead">{profile.summary}</p>
