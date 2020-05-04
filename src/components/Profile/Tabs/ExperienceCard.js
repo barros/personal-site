@@ -1,8 +1,14 @@
 import React from 'react';
 import { Media } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
 
 class ExperienceCard extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   getDuration = duration => {
     const years = parseInt(duration / 12);
     const months = duration > 12 ? duration % 12 : duration;
@@ -32,11 +38,19 @@ class ExperienceCard extends React.Component {
         }
       }
     });
-    console.log(totalDuration);
+
     if (presentDate) {
       const currentDate = moment(new Date());
       totalDuration += currentDate.diff(presentDate, 'months');
     }
+
+    let companyLogo =
+      experience.logo === 'currentJob' ? (
+        <FontAwesomeIcon className="expLogo " color="grey" icon={faBriefcase} />
+      ) : (
+        <Media className="expLogo" object src={this.props.logo} alt={experience.companyName} />
+      );
+
     return (
       <div
         style={{
@@ -53,7 +67,7 @@ class ExperienceCard extends React.Component {
       >
         <Media>
           <Media left top target="_blank" href={experience.url}>
-            <Media className="expLogo" object src={experience.logo} alt={experience.companyName} />
+            {companyLogo}
           </Media>
           <Media body>
             <Media heading>
@@ -72,9 +86,11 @@ class ExperienceCard extends React.Component {
               const startDate = moment(role.startDate);
               const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
               let tasks = [];
-              role.tasks.forEach(task => {
-                tasks.push(task);
-              });
+              if (role.tasks) {
+                role.tasks.forEach(task => {
+                  tasks.push(task);
+                });
+              }
               let line = i !== roles.length - 1 ? <hr className="my-2" /> : '';
               let period;
               if (role.internship) {

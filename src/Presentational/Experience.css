@@ -6,6 +6,7 @@ div.media .media-heading .jobTotalDuration {
 
 div.media .expLogo {
   height: 13.5vmin;
+  width: 13.5vmin;
   margin-bottom: 10px;
   margin-right: 20px;
   border-radius: 55px;
@@ -14,7 +15,7 @@ div.media .expLogo {
 div.media .jobDuration {
   color: #444;
   display: block;
-  font-style: italic
+  font-style: italic;
 }
 
 div.media .jobLocation {

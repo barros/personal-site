@@ -6,7 +6,7 @@
   "studies": [
     {
       "institute": "Boston College",
-      "logo": "http://www.collegevault.com/wp-content/uploads/2014/11/bc_cv15.png",
+      "logo": "bcLogo",
       "url": "http://www.bc.edu/",
       "title": "Computer Science, B.A.",
       "durationInYears": "4",
@@ -14,7 +14,7 @@
     },
     {
       "institute": "Cristo Rey Boston High School",
-      "logo": "https://media.licdn.com/dms/image/C560BAQFci67xgY2vSw/company-logo_400_400/0?e=1569456000&v=beta&t=Z-bzKTL2rCajahC-R6P32WxAxO9kF6h5FYtL7t0ajcc",
+      "logo": "crbLogo",
       "url": "https://www.cristoreyboston.org/",
       "title": "National Honors Society, Top 5% of the graduating class",
       "durationInYears": "4",
@@ -22,6 +22,19 @@
     }
   ],
   "experiences": [
+    {
+      "companyName": "PowerAdvocate",
+      "logo": "currentJob",
+      "url": "https://w3.poweradvocate.com/",
+      "roles": [
+        {
+          "title": "Full-Stack Software Engineer",
+          "currentJob": true,
+          "startDate": "2019-10-01",
+          "location": "Boston, MA"
+        }
+      ]
+    },
     {
       "companyName": "Boston College, Information Technology Services",
       "logo": "https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col2/bc_image_content/image.img.png/1550507516441.png",
@@ -65,7 +78,7 @@
     },
     {
       "companyName": "BC GET Delivery",
-      "logo": "https://media.licdn.com/dms/image/C560BAQFx7mGex98Drg/company-logo_400_400/0?e=1568851200&v=beta&t=dAHEiL6cuhukyK7j746hhLakWJKKknpe4t1iqsqsV3E",
+      "logo": "bcGetLogo",
       "url": "https://www.linkedin.com/company/bc-get-delivery/about/",
       "roles": [
         {
@@ -83,7 +96,7 @@
     },
     {
       "companyName": "Nike Boston",
-      "logo": "https://media.licdn.com/dms/image/C560BAQHR1RfVwHn3Lw/company-logo_400_400/0?e=1568851200&v=beta&t=BPmgGlo1sduSQeUegYX-fvMygHHHfmhmqj3Jyg9h514",
+      "logo": "https://seeklogo.net/wp-content/uploads/2013/11/nike-swoosh-vector-logo-400x400.png",
       "url": "https://www.nike.com/",
       "roles": [
         {
@@ -100,7 +113,7 @@
     },
     {
       "companyName": "Cristo Rey Boston High School",
-      "logo": "https://media.licdn.com/dms/image/C560BAQFci67xgY2vSw/company-logo_400_400/0?e=1569456000&v=beta&t=Z-bzKTL2rCajahC-R6P32WxAxO9kF6h5FYtL7t0ajcc",
+      "logo": "crbLogo",
       "url": "https://www.cristoreyboston.org/",
       "roles": [
         {
