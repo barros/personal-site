@@ -71,7 +71,6 @@ class ProjectCard extends React.Component {
         <div style={{ marginBottom: '10px' }}>
           <h5 style={{ fontFamily: 'Poppins', fontWeight: 'bold', color: '#44444' }}>Tech Stack</h5>
           {techStack.map(function (tech, i) {
-            console.log(tech);
             return <div style={{ fontFamily: 'Poppins' }}>- {tech}</div>;
           })}
         </div>
