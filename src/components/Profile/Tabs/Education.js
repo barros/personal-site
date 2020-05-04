@@ -2,7 +2,12 @@ import React from 'react';
 import { Row, Col, Media } from 'reactstrap';
 import profile from '../../../data/profile.json';
 
+import bcLogo from '../../../images/vintageBC.png';
+import crbLogo from '../../../images/cristoReyLogo.png';
+
 import '../../../Presentational/Education.css';
+
+let schoolLogos = { bcLogo, crbLogo };
 
 class Education extends React.Component {
   render() {
@@ -20,7 +25,7 @@ class Education extends React.Component {
                   <Media
                     className="eduLogo"
                     object
-                    src={study.logo}
+                    src={schoolLogos[study.logo]}
                     alt={study.institute}
                     style={{ borderRadius: logoBorderRadius }}
                   />
@@ -51,9 +56,8 @@ class Education extends React.Component {
                       <div>
                         <Row>
                           <Col className="formLabel" style={{ fontSize: 20, color: '#444444' }}>
-                            {object.key}
-:
-</Col>
+                            {object.key}:
+                          </Col>
                         </Row>
                         <Row>
                           <Col style={{ color: 'black' }}>{object.value}</Col>
